@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>English to French Translator</title>
+    <style>
+        body { font-family: sans-serif; max-width: 600px; margin: 60px auto; padding: 0 20px; }
+        h1 { font-size: 24px; }
+        textarea { width: 100%; padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 6px; }
+        button { margin-top: 10px; padding: 10px 24px; background: #4f46e5; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 16px; }
+        .result { margin-top: 24px; background: #f0fdf4; border: 1px solid #bbf7d0; padding: 16px; border-radius: 6px; }
+    </style>
+</head>
+<body>
+    <h1>English to French Translator</h1>
+    <form method="POST">
+        <textarea name="sentence" rows="3" placeholder="Type an English sentence...">{{ sentence }}</textarea>
+        <br>
+        <button type="submit">Translate</button>
+    </form>
+    {% if translation %}
+    <div class="result">
+        <strong>French:</strong> {{ translation }}
+    </div>
+    {% endif %}
+</body>
+</html>
