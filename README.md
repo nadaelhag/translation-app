@@ -84,7 +84,7 @@ http://localhost:5000
 ## Live Demo (Deployment)
 
 The app is live and accessible at:
-[link](link)
+[https://translation-app-ursq.onrender.com](https://translation-app-ursq.onrender.com)
 
 ## Known Issues and Limitations
 
